@@ -1,0 +1,41 @@
+:root {
+    --original-background-height : 3705;
+    --original-background-width: 5755px;
+    --original-logo-height: 508px;
+    --original-logo-width: 380px;
+}
+
+
+body{
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+.section1 {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+.background-img {
+    height: 100vh;
+    width: calc(var(--original-background-width)/5.4);
+}
+.logoAnd1 {
+    position: absolute;
+    top: 250px;
+    display: flex;
+    background-color: rgba(15, 38, 71, 0.816);
+    width: calc(var(--original-background-width)/5.4);
+    padding-left: 100px;
+    padding: right 0px; ;
+}
+.logo {
+        height: calc(var(--original-logo-height)/4);
+        width: calc(var(--original-logo-width)/4);
+}
+#logo-text {
+    align-self: center;
+    Font-family: Didot, Didot LT STD, Hoefler Text, Garamond, Calisto MT, Times New Roman, serif;
+    color: aliceblue;
+    font-size: 30px;
+}
