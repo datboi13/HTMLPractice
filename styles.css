@@ -1,10 +1,9 @@
 :root {
-    --original-background-height : 3705;
-    --original-background-width: 5755px;
+    --original-background-height : 959px;
+    --original-background-width: 640px;
     --original-logo-height: 508px;
     --original-logo-width: 380px;
 }
-
 
 body{
     padding: 0px;
@@ -18,24 +17,109 @@ body{
 }
 .background-img {
     height: 100vh;
-    width: calc(var(--original-background-width)/5.4);
+    width: calc((1920px/100vh)*1280px);
 }
 .logoAnd1 {
     position: absolute;
     top: 250px;
     display: flex;
     background-color: rgba(15, 38, 71, 0.816);
-    width: calc(var(--original-background-width)/5.4);
-    padding-left: 100px;
+    width: 500px;
+    padding-left: 150px;
     padding: right 0px; ;
 }
 .logo {
-        height: calc(var(--original-logo-height)/4);
-        width: calc(var(--original-logo-width)/4);
+        height: 127px;;
+        width: 95px;
 }
 #logo-text {
     align-self: center;
     Font-family: Didot, Didot LT STD, Hoefler Text, Garamond, Calisto MT, Times New Roman, serif;
-    color: aliceblue;
+    color: rgb(152, 201, 244);
     font-size: 30px;
+}
+.section2 {
+    position: absolute;
+    top: 0%;
+    left: 45vw;
+    right: auto;
+    background-color: #c8d5e9;
+    height: 100vh;
+    width: 55vw;
+}
+.color{
+    margin-top: 25%;
+    background-color: darkgray;
+    max-height: fit-content;
+    width: 100%;
+}
+#signup {
+    margin-left: 20px;
+    font-family:Didot, Didot LT STD, Hoefler Text, Garamond, Calisto MT, Times New Roman, serif;
+    font-size: 40px;
+}
+
+.Sign {
+    padding-left: 50px;
+    padding: 30px;
+    width: 60%;
+    height: max-content;
+    display: flex;
+    flex-wrap: wrap;
+    font-family:Didot, Didot LT STD, Hoefler Text, Garamond, Calisto MT, Times New Roman, serif;
+    font-size: 20px;
+}
+
+
+.firstname {
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+#fname {
+    width: 150px;
+    height: 20px;
+    border-radius: 2px;
+}
+#lname {
+    width: 150px;
+    height: 20px;
+}
+#phone {
+    width: 150px;
+    height: 20px;
+}
+#email {
+    width: 150px;
+    height: 20px;
+}
+#password {
+    width: 150px;
+    height: 20px;
+}
+
+.lastname {
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+.phone {
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+.emails {
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+.passwords {
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+    margin-bottom: 50px;
 }
