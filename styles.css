@@ -21,7 +21,7 @@ body{
 }
 .logoAnd1 {
     position: absolute;
-    top: 250px;
+    top: 100px;
     display: flex;
     background-color: rgba(15, 38, 71, 0.816);
     width: 500px;
@@ -43,15 +43,18 @@ body{
     top: 0%;
     left: 45vw;
     right: auto;
-    background-color: #c8d5e9;
+    background-color: #e7ebef;
     height: 100vh;
     width: 55vw;
 }
 .color{
-    margin-top: 25%;
-    background-color: darkgray;
+    margin-top: 10%;
+    background-color: rgb(165, 189, 208);
     max-height: fit-content;
     width: 100%;
+    height: 45%;
+    box-shadow:black;
+    box-shadow: 15px;
 }
 #signup {
     margin-left: 20px;
@@ -61,7 +64,7 @@ body{
 
 .Sign {
     padding-left: 50px;
-    padding: 30px;
+    padding: 15px;
     width: 60%;
     height: max-content;
     display: flex;
@@ -75,55 +78,98 @@ body{
     display: flex;
     flex-direction: column;
     margin-right: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .lastname {
     display: flex;
     flex-direction: column;
     margin-right: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 .phone {
     display: flex;
     flex-direction: column;
     margin-right: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 .emails {
     display: flex;
     flex-direction: column;
     margin-right: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 .passwords {
     display: flex;
     flex-direction: column;
     margin-right: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 #fname {
     width: 150px;
     height: 20px;
     border-radius: 5px;
+    border-color: rgb(106, 104, 223);
 }
 #lname {
     width: 150px;
     height: 20px;
     border-radius: 5px;
+    border-color: rgb(106, 104, 223);
+
 }
 #phone {
     width: 150px;
     height: 20px;
     border-radius: 5px;
+    border-color: rgb(106, 104, 223);
+
 }
 #email {
     width: 150px;
     height: 20px;
     border-radius: 5px;
+    border-color: rgb(106, 104, 223);
+
 }
 #password {
     width: 150px;
     height: 20px;
     border-radius: 5px;
+    border-color: rgb(106, 104, 223);
+}
+button {
+      position: absolute;
+      top: 500px;
+      left: 20px;
+      appearance: button;
+      backface-visibility: hidden;
+      background-color: cornflowerblue;
+      border-radius: 6px;
+      border-width: 0;
+      box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
+      box-sizing: border-box;
+      color: #fff;
+      cursor: pointer;
+      font-family: -apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Ubuntu,sans-serif;
+      font-size: 100%;
+      height: 44px;
+      width: 200px;
+      line-height: 1.15;
+      margin: 12px 0 0;
+      outline: none;
+      overflow: hidden;
+      padding: 0 25px;
+      text-align: center;
+      text-transform: none;
+      transform: translateZ(0);
+      transition: all .2s,box-shadow .08s ease-in;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+    }
+    
+.text {
+    font-size: 1.25rem;
+    font-family: Didot, Didot LT STD, Hoefler Text, Garamond, Calisto MT, Times New Roman, serif;;
 }
