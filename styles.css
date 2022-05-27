@@ -77,27 +77,6 @@ body{
     margin-right: 50px;
     margin-bottom: 50px;
 }
-#fname {
-    width: 150px;
-    height: 20px;
-    border-radius: 2px;
-}
-#lname {
-    width: 150px;
-    height: 20px;
-}
-#phone {
-    width: 150px;
-    height: 20px;
-}
-#email {
-    width: 150px;
-    height: 20px;
-}
-#password {
-    width: 150px;
-    height: 20px;
-}
 
 .lastname {
     display: flex;
@@ -122,4 +101,29 @@ body{
     flex-direction: column;
     margin-right: 50px;
     margin-bottom: 50px;
+}
+#fname {
+    width: 150px;
+    height: 20px;
+    border-radius: 5px;
+}
+#lname {
+    width: 150px;
+    height: 20px;
+    border-radius: 5px;
+}
+#phone {
+    width: 150px;
+    height: 20px;
+    border-radius: 5px;
+}
+#email {
+    width: 150px;
+    height: 20px;
+    border-radius: 5px;
+}
+#password {
+    width: 150px;
+    height: 20px;
+    border-radius: 5px;
 }
