@@ -9,8 +9,10 @@ body{
     padding: 0px;
     margin: 0px;
     border: 0px;
+    max-width: 100vw;
 }
 .section1 {
+    display: flex;
     padding: 0px;
     margin: 0px;
     border: 0px;
@@ -18,16 +20,21 @@ body{
 .background-img {
     height: 100vh;
     width: calc((1920px/100vh)*1280px);
+    flex: 0 1 0%;
 }
 .logoAnd1 {
     position: absolute;
     top: 150px;
     display: flex;
     background-color: rgba(15, 38, 71, 0.816);
-    width: 500px;
+    width: 50vw;
+    min-width: none;
     padding-left: 150px;
-    padding: right 0px; ;
+    padding: right 0px;
+    display: flex;
+    flex: 0 1 0%;
 }
+
 .logo {
         height: 127px;;
         width: 95px;
@@ -45,27 +52,29 @@ body{
     right: auto;
     background-color: #dbe3eb;
     height: 100vh;
-    width: 55vw;
+    max-width: 55vw;
+    
 }
 .color{
     margin-top: 35px;
     background-color: rgb(233, 243, 250);
     max-height: fit-content;
-    width: 100%;
+    max-width: 100%;
+    min-width: 800px;
     height: 45%;
-    box-shadow:black;
-    box-shadow: 15px;
+    box-shadow: 0px 7px 5px gray, 0px -2px 4px gray;
 }
 #signup {
-    margin-left: 20px;
+    margin-left: 30px;
     font-family:Didot, Didot LT STD, Hoefler Text, Garamond, Calisto MT, Times New Roman, serif;
     font-size: 40px;
 }
 
 .Sign {
     padding-left: 50px;
-    padding: 15px;
-    width: 100%;
+    padding: 30px;
+    padding-right: 0px;
+    width: 95%;
     height: max-content;
     display: flex;
     flex-wrap: wrap;
@@ -84,77 +93,79 @@ body{
 .lastname {
     display: flex;
     flex-direction: column;
-    margin-right: 100px;
     margin-bottom: 30px;
 }
 .phone {
     display: flex;
     flex-direction: column;
-    margin-right: 100px;
     margin-bottom: 30px;
 }
 .emails {
     display: flex;
     flex-direction: column;
-    margin-right: 100px;
+    margin-right: 150px;
     margin-bottom: 30px;
 }
 .passwords {
     display: flex;
     flex-direction: column;
-    margin-right: 100px;
+    margin-right: 150px;
+    margin-bottom: 30px;
+}
+.confirm {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 30px;
 }
 #fname {
     width: 250px;
     height: 20px;
-    border-radius: 5px;
+    background-color: rgb(233, 243, 250);
 }
 #lname {
     width: 250px;
     height: 20px;
-    border-radius: 5px;
-
+    background-color: rgb(233, 243, 250);
 }
 #phone {
     width: 250px;
     height: 20px;
-    border-radius: 5px;
-
+    background-color: rgb(233, 243, 250);
 }
 #email {
     width: 250px;
     height: 20px;
-    border-radius: 5px;
-
+    background-color: rgb(233, 243, 250);
 }
 #password {
     width: 250px;
     height: 20px;
-    border-radius: 5px;
+    background-color: rgb(233, 243, 250);
+}
+#confirm {
+    width: 250px;
+    height: 20px;
+    background-color: rgb(233, 243, 250);
 }
 button {
-      position: absolute;
-      top: 550px;
-      left: 20px;
+      margin-top: 50px;
       appearance: button;
       backface-visibility: hidden;
-      background-color: cornflowerblue;
+      background-color: rgb(152, 201, 244);
       border-radius: 6px;
       border-width: 0;
       box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
       box-sizing: border-box;
-      color: #fff;
+      color: rgb(0, 0, 0);
       cursor: pointer;
       font-family: -apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Ubuntu,sans-serif;
       font-size: 100%;
       height: 44px;
       width: 200px;
       line-height: 1.15;
-      margin: 12px 0 0;
       outline: none;
       overflow: hidden;
-      padding: 0 25px;
+      padding: 0 25px; 
       text-align: center;
       text-transform: none;
       transform: translateZ(0);
@@ -172,11 +183,43 @@ button {
     font-size: 1.25rem;
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(58, 96, 129);
+    max-width: 700px;
 }
 .text2 {
     padding-top: 40px;
+    padding-left: 30px;
     font-size: 1.25rem;
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(58, 96, 129);
-
+    max-width: 700px;
+}
+#fname:focus {
+    border-radius: 2px;
+    border-color: cornflowerblue;
+    box-shadow: 2px 5px 5px gray;
+}
+#lname:focus {
+    border-radius: 2px;
+    border-color: cornflowerblue;
+    box-shadow: 2px 5px 5px gray;
+}
+#email:focus {
+    border-radius: 2px;
+    border-color: cornflowerblue;
+    box-shadow: 2px 5px 5px gray;
+}
+#phone:focus {
+    border-radius: 2px;
+    border-color: cornflowerblue;
+    box-shadow: 2px 5px 5px gray;
+}
+#password:focus {
+    border-radius: 2px;
+    border-color: cornflowerblue;
+    box-shadow: 2px 5px 5px gray;
+}
+#confirm:focus {
+    border-radius: 2px;
+    border-color: cornflowerblue;
+    box-shadow: 2px 5px 5px gray;
 }
